@@ -29,6 +29,7 @@ namespace MoverLabel
             lbl.Size = new System.Drawing.Size(40, 40);
             lbl.Left = 100;
             lbl.Top = 100;
+
             this.Controls.Add(lbl);
 
             do
@@ -36,6 +37,7 @@ namespace MoverLabel
                 lbl.Left = lbl.Left + pasoHorizontal;
                 lbl.Top = lbl.Top + pasoVertical;
                 this.Refresh();
+
                 if(this.Height < lbl.Top +  lbl.Height)
                 {
                     pasoVertical = -1 * pasoVertical;
